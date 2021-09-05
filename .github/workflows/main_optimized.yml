@@ -1,14 +1,15 @@
 name: CI to Docker Hub Optm
 on:
   # Trigger the workflow on push only for the master branch
-  create:
-    tags:
-      - "v*.*.*"
+  #create:
+  #  tags:
+  #    - "v*.*.*"
   push:
     tags:
       - "v*.*.*"
-    branches:
-      - master
+  # There is not a way to run workflow on push tag on specfic branch (https://github.community/t/run-workflow-on-push-tag-on-specific-branch/17519)
+  #branches:
+  #   - master
 
 jobs:
   build:
