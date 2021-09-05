@@ -4,7 +4,7 @@ on:
   create:
     tags:
       - "v*.*.*"
-   push:
+  push:
     tags:
       - "v*.*.*"
         #    branches:
