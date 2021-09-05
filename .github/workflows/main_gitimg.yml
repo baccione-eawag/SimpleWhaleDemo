@@ -37,7 +37,7 @@ jobs:
         with:
           context: ./
           file: ./Dockerfile
-          push: ghcr.io/${{ github.repository_owner }}/simplewhale:latest
+          push: true
           tags: ghcr.io/${{ github.repository_owner }}/simplewhale:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
